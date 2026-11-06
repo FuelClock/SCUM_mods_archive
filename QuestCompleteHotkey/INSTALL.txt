@@ -1,0 +1,26 @@
+QuestCompleteHotkey v1 - install (2026-11-06)
+=============================================
+
+1. scp the zip to the game machine, then unzip it INTO the SCUM game dir
+   (the zip contains the full SCUM/SCUM/Binaries/Win64/ue4ss/Mods/ path,
+   so unzip from the Steam SCUM root):
+     unzip -o scum-questcompletehotkey-v1.zip -d ~/.local/share/Steam/steamapps/common/SCUM/
+2. VERIFY the file actually landed (nested unzip = mod silently ignored):
+     ls ~/.local/share/Steam/steamapps/common/SCUM/SCUM/Binaries/Win64/ue4ss/Mods/QuestCompleteHotkey/Scripts/main.lua
+3. Add to the ue4ss mods.txt (same dir as Mods/):
+     QuestCompleteHotkey : 1
+4. Launch SCUM, singleplayer, have an active quest.
+5. Press Numpad0. Watch the quest book / quest tracker.
+
+One-log-paste diagnostic grep (DEBUG=true build, every line is tagged):
+  grep "\[QCH\]" ~/.local/share/Steam/steamapps/common/SCUM/SCUM/Binaries/Win64/ue4ss/UE4SS.log
+What to look for:
+  - "v1 loaded"                       -> mod loaded
+  - "hotkey PLAIN KEY_... bound" / "no-key KEY_..."  -> which Numpad0 name works
+  - "quest owner: ..."                -> which live object holds activeQuests
+  - "activeQuests: count=N" + names   -> we can see the active quest
+  - "PRESS via ..."                   -> the key fires
+  - "ADVANCE #k: ... ok/FAILED ..."   -> the advance call result (errors here are gold)
+  - "QUEST COMPLETED - left activeQuests after N advance call(s)"
+  - heartbeat lines every ~30s prove the poll loop is alive
+If NOTHING works but the mod loaded: paste the grep output, every line matters.
