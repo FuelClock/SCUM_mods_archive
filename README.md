@@ -19,9 +19,6 @@ files). Lua install: copy the `Mods/<Name>/` folder into
 | NoReticles | Pak | Removes scope/weapon reticles |
 | SpekralScopeNoReticle | Pak | No-reticle variant for the Spekral scope |
 | FogKiller | UE4SS Lua | Fog removal (Ctrl+Shift+F keybind taken by this mod) |
-| GlassClear | UE4SS Lua | RETIRED — superseded by the pak route |
-| GlassDump | UE4SS Lua | Debug tool for dumping glass material info |
-| SightDotProbe | UE4SS Lua | Sight dot probe |
 | SkipCutscenes | UE4SS Lua | Skips intro cutscenes |
 | QuestCompleteHotkey | UE4SS Lua | Quest-complete hotkey |
 | Lockpicking | Pak source | Lockpicking variants (full-angle build; loose asset tree, never pakged) |
