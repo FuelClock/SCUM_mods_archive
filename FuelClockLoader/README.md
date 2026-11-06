@@ -1,12 +1,12 @@
 # FuelClockLoader
 
-Personal pak mod loader for SCUM — a fork of **Troopermanaic**'s
+Personal pak mod loader for SCUM: a fork of **Troopermanaic**'s
 [Unofficial Editor Mod Loader](https://www.nexusmods.com/scum/mods/61)
 (Beta 0.1), updated with these changes:
 
 - `SCUM/Config/DefaultEngine.ini` regenerated from the **current client build**
   (the original shipped a June-2026 config whose stale redirects caused vehicle
-  physics explosions on game entry — entering a vehicle flung the player and
+  physics explosions on game entry: entering a vehicle flung the player and
   the vehicle across the map).
 - The config's `GameInstanceClass` points at the loader's own
   `BP_ConZGameInstance_Child`, which scans `/Game/MOD/<MapName>` on the Asset
@@ -40,5 +40,5 @@ current client's `pakchunk0` and swap it into this pak (keep only the
 ## Upstream status
 
 The original loader's author has marked it pending removal from Nexus (they're
-building a new editor with its own loading system) — this fork exists so the
+building a new editor with its own loading system) - this fork exists so the
 convention keeps working locally regardless.
