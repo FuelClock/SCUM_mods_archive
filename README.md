@@ -11,18 +11,14 @@ files). Lua install: copy the `Mods/<Name>/` folder into
 
 | Mod | Kind | Notes |
 |---|---|---|
+| FuelClockLoader | Pak | Personal pak mod loader (fork of Nexus "Unofficial Editor Mod Loader" Beta 0.1, config regenerated for the current build). Loader-convention mods drop BP actors under `Content/MOD/<MapName>/`. |
 | CleanCarWindows | Pak | Dirt-free vehicle windows (current approach) |
 | CleanPlaneWindows | Pak | Dirt-free plane windows (current approach) |
-| CarMasksBlack | Pak | Black vehicle glass masks |
-| PlaneGlassBlack | Pak | Black plane glass (superseded by CleanPlaneWindows) |
-| PlaneGlassWhite | Pak | White/frosted plane glass (superseded by CleanPlaneWindows) |
 | NoReticles | Pak | Removes scope/weapon reticles |
 | SpekralScopeNoReticle | Pak | No-reticle variant for the Spekral scope |
 | FogKiller | UE4SS Lua | Fog removal (Ctrl+Shift+F keybind taken by this mod) |
-| SkipCutscenes | UE4SS Lua | Skips intro cutscenes |
 | QuestCompleteHotkey | UE4SS Lua | Quest-complete hotkey |
 | Lockpicking | Pak source | Lockpicking variants (full-angle build; loose asset tree, never pakged) |
 | WeaponPlacement | Pak source | Weapon placement variant (loose asset tree) |
-| PowerplantInteriorsRestore | Pak source | Interiors restore. **v2 (3 GB) exceeds GitHub's 100 MB file limit, stored locally on /opt only.** |
 
 Older versions of every mod are kept locally on `/opt` (`/opt/scum-<mod>-v<N>.zip`).
