@@ -11,7 +11,7 @@ files). Lua install: copy the `Mods/<Name>/` folder into
 
 | Mod | Kind | Notes |
 |---|---|---|
-| FuelClockLoader | Pak | Personal pak mod loader (fork of Nexus "Unofficial Editor Mod Loader" Beta 0.1, config regenerated from stock 1.3.6 (build 26593778: collision channels reworked upstream)). Loader-convention mods drop BP actors under `Content/MOD/<MapName>/`. |
+| FuelClockLoaderPatch | Pak | Personal pak mod loader renamed from SCUM_FuelClockLoader_P (fork of Nexus "Unofficial Editor Mod Loader" Beta 0.1, config regenerated from stock 1.3.6 (build 26593778: collision channels reworked upstream)). Loader-convention mods drop BP actors under `Content/MOD/<MapName>/`. |
 | CleanCarWindows | Pak | Dirt-free vehicle windows (current approach) |
 | CleanPlaneWindows | Pak | Dirt-free plane windows (current approach) |
 | NoReticles | Pak | Removes scope/weapon reticles (rebuilt against the 1.3.6 client) |
